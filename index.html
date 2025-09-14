@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Tic Tac Toe</h1>
+
+    <!-- New Game button (closer to board) -->
+    <div class="top-bar">
+      <button id="newGame" class="new-game">New Game</button>
+    </div>
+
+    <!-- Game board -->
+    <section id="board" class="board"></section>
+
+    <!-- Status -->
+    <div id="status" class="status">Player X's turn</div>
+  </main>
+
+  <!-- Overlay for win/draw -->
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-content">
+      <h2 id="resultText"></h2>
+      <button id="overlayNewGame">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
